@@ -10,7 +10,6 @@ import ErrorMessage from "../errorMessage/ErrorMessage";
 class RandomChar extends Component {
 	constructor(props) {
 		super(props);
-		this.updateChar();
 	}
 
 	state = {
@@ -20,6 +19,10 @@ class RandomChar extends Component {
 	};
 
 	marvelService = new MarvelSrevice();
+
+	componentDidMount() {
+		this.updateChar();
+	}
 
 	onCharLoaded = (char) => {
 		this.setState({ char, loading: false });
@@ -55,7 +58,10 @@ class RandomChar extends Component {
 						Do you want to get to know him better?
 					</p>
 					<p className="randomchar__title">Or choose another one</p>
-					<button className="button button__main">
+					<button
+						className="button button__main"
+						onClick={this.updateChar}
+					>
 						<div className="inner">try it</div>
 					</button>
 					<img
@@ -70,9 +76,16 @@ class RandomChar extends Component {
 }
 
 const View = ({ char: { name, description, thumbnail, homepage, wiki } }) => {
+	const imgStyle =
+		thumbnail ==
+		"http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
+			? { objectFit: "contain" }
+			: { objectFit: "cover" };
+
 	return (
 		<div className="randomchar__block">
 			<img
+				style={imgStyle}
 				src={thumbnail}
 				alt="Random character"
 				className="randomchar__img"
