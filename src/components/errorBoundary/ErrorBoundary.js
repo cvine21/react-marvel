@@ -4,9 +4,8 @@ import ErrorMessage from "../errorMessage/ErrorMessage";
 class ErrorBoundary extends Component {
 	state = { error: false };
 
-	componentDidCatch(error, errorInfo) {
-		console.log(error, errorInfo);
-		this.setState({ error: true });
+	static getDerivedStateFromError(error) {
+		return { error: true };
 	}
 
 	render() {
