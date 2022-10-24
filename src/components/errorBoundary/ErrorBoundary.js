@@ -8,6 +8,10 @@ class ErrorBoundary extends Component {
 		return { error: true };
 	}
 
+	componentDidCatch(error, info) {
+		console.log(error, info);
+	}
+
 	render() {
 		if (this.state.error) return <ErrorMessage />;
 		return this.props.children;
