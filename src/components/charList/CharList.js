@@ -5,7 +5,7 @@ import "./charList.scss";
 
 import ErrorMessage from "../errorMessage/ErrorMessage";
 import Spinner from "../spinner/Spinner";
-import useMarvelSrevice from "../../services/useMarvelService";
+import useMarvelService from "../../services/useMarvelService";
 
 const CharList = (props) => {
 	const [charList, setCharList] = useState([]);
@@ -13,7 +13,7 @@ const CharList = (props) => {
 	const [offset, setOffset] = useState(210);
 	const [charEnded, setCharEnded] = useState(false);
 
-	const { loading, error, getAllCharacters } = useMarvelSrevice();
+	const { loading, error, getAllCharacters } = useMarvelService();
 
 	useEffect(() => onRequest(offset, true), []);
 
@@ -45,8 +45,10 @@ const CharList = (props) => {
 
 	const renderItems = (arr) => {
 		const items = arr.map((item, i) => {
+			const { thumbnail, id, name } = item;
+
 			const imgStyle =
-				item.thumbnail ===
+				thumbnail ===
 				"http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg"
 					? { objectFit: "unset" }
 					: { objectFit: "cover" };
@@ -54,19 +56,15 @@ const CharList = (props) => {
 			return (
 				<li
 					className="char__item"
-					key={item.id}
+					key={id}
 					onClick={() => {
-						props.onCharSelected(item.id);
+						props.onCharSelected(id);
 						focusOnItem(i);
 					}}
 					ref={(el) => (itemRefs.current[i] = el)}
 				>
-					<img
-						style={imgStyle}
-						src={item.thumbnail}
-						alt={item.name}
-					/>
-					<div className="char__name">{item.name}</div>
+					<img style={imgStyle} src={thumbnail} alt={name} />
+					<div className="char__name">{name}</div>
 				</li>
 			);
 		});
