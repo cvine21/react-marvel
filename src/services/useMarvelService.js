@@ -46,7 +46,7 @@ const useMarvelService = () => {
 
 	const _transformComic = (comic) => {
 		return {
-			d: comic.id,
+			id: comic.id,
 			title: comic.title,
 			description: comic.description || "No description",
 			pageCount: comic.pageCount
