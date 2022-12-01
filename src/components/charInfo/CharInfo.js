@@ -10,7 +10,7 @@ import Skeleton from "../skeleton/Skeleton";
 const CharInfo = ({ charId }) => {
 	const [char, setChar] = useState(null);
 
-	const { loading, error, getCharacter, clearError } = useMarvelSrevice();
+	const { loading, error, getCharacterById, clearError } = useMarvelSrevice();
 
 	useEffect(() => updateChar(), [charId]);
 
@@ -18,7 +18,7 @@ const CharInfo = ({ charId }) => {
 		if (!charId) return;
 
 		clearError();
-		getCharacter(charId).then(onCharLoaded);
+		getCharacterById(charId).then(onCharLoaded);
 	};
 
 	const onCharLoaded = (char) => setChar(char);
