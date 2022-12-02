@@ -5,7 +5,7 @@ Here you can find information about your favorite Marvel character and find comi
 
 ## Features
 
-### Find info about characters
+### Find information about the characters
 
 -   Pick a random character
     <details>
@@ -31,7 +31,7 @@ Here you can find information about your favorite Marvel character and find comi
           <img src="./src/resources/img/screenshots/char-form.png" height="200"/>
     </details>
 
-### Find info about comics
+### Find information about the comics
 
 In comics page select the comic you're interested in.
 
