@@ -12,7 +12,7 @@ Here you can find information about your favorite Marvel character and find comi
           <summary className="px-3 py-1 rounded-5 text-primary">
             Show screenshot
           </summary>
-          <img src="./src/resources/img/screenshots/random-char.png" height="150"/>
+          <img src="./src/resources/img/screenshots/random-char.png" height="200"/>
     </details>
 
 -   Pick a specific character from the list
@@ -20,7 +20,7 @@ Here you can find information about your favorite Marvel character and find comi
         <summary className="px-3 py-1 rounded-5 text-primary">
           Show screenshot
         </summary>
-        <img src="./src/resources/img/screenshots/char-info.png" height="200"/>
+        <img src="./src/resources/img/screenshots/char-info.png" height="400"/>
     </details>
 
 -   Enter character's name on a form
@@ -28,7 +28,7 @@ Here you can find information about your favorite Marvel character and find comi
           <summary className="px-3 py-1 rounded-5 text-primary">
             Show screenshot
           </summary>
-          <img src="./src/resources/img/screenshots/char-form.png" height="100"/>
+          <img src="./src/resources/img/screenshots/char-form.png" height="200"/>
     </details>
 
 ### Find info about comics
@@ -39,8 +39,8 @@ In comics page select the comic you're interested in.
       <summary className="px-3 py-1 rounded-5 text-primary">
         Show screenshots
       </summary>
-      <img src="./src/resources/img/screenshots/comics.png" height="200"/>
-      <img src="./src/resources/img/screenshots/comic-info.png" height="200"/>
+      <img src="./src/resources/img/screenshots/comics.png" height="400"/>
+      <img src="./src/resources/img/screenshots/comic-info.png" height="400"/>
 </details>
 
 ## Stack
