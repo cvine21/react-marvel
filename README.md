@@ -52,7 +52,7 @@ In comics page select the comic you're interested in.
 -   SCSS
 -   <a href="https://developer.marvel.com/">Marvel Comics API</a>
 
-## Setup
+## How to run
 
 1. Clone this repo and go to the cloned folder.
 
