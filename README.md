@@ -1,60 +1,73 @@
 # :superhero_man: React Marvel
+
 Discover the Marvel Universe with the React Marvel app.\
 Here you can find information about your favorite Marvel character and find comics with him.
 
 ## Features
+
 ### Find info about characters
-- Pick a random character
-  <details>
+
+-   Pick a random character
+    <details>
+          <summary className="px-3 py-1 rounded-5 text-primary">
+            Show screenshot
+          </summary>
+          <img src="./src/resources/img/screenshots/random-char.png" height="150"/>
+    </details>
+
+-   Pick a specific character from the list
+    <details>
         <summary className="px-3 py-1 rounded-5 text-primary">
           Show screenshot
         </summary>
-        some screenshot
-  </details>
+        <img src="./src/resources/img/screenshots/char-info.png" height="200"/>
+    </details>
 
-- Pick a specific character from the list
-  <details>
-      <summary className="px-3 py-1 rounded-5 text-primary">
-        Show screenshot
-      </summary>
-      some screenshot
-  </details>
+-   Enter character's name on a form
+    <details>
+          <summary className="px-3 py-1 rounded-5 text-primary">
+            Show screenshot
+          </summary>
+          <img src="./src/resources/img/screenshots/char-form.png" height="100"/>
+    </details>
 
-- Enter character's name on a form
-  <details>
-        <summary className="px-3 py-1 rounded-5 text-primary">
-          Show screenshot
-        </summary>
-        some screenshot
-  </details>
 ### Find info about comics
+
 In comics page select the comic you're interested in.
+
 <details>
       <summary className="px-3 py-1 rounded-5 text-primary">
-        Show screenshot
+        Show screenshots
       </summary>
-      some screenshot
+      <img src="./src/resources/img/screenshots/comics.png" height="200"/>
+      <img src="./src/resources/img/screenshots/comic-info.png" height="200"/>
 </details>
 
-
 ## Stack
-- React.JS
-- React Router
-- Formik
-- Yup
-- SCSS
-- <a href="https://developer.marvel.com/">Marvel Comics API</a>
+
+-   React.JS
+-   React Router
+-   Formik
+-   Yup
+-   SCSS
+-   <a href="https://developer.marvel.com/">Marvel Comics API</a>
 
 ## Setup
+
 1. Clone this repo and go to the cloned folder.
-``` sh
+
+```sh
 $> https://github.com/cvine21/react-marvel.git && cd react-marvel
 ```
+
 2. Install all the dependencies
-``` sh
+
+```sh
 $> npm install
 ```
+
 3. Run the application
-``` sh
+
+```sh
 $> npm start
 ```
