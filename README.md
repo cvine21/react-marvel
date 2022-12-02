@@ -1,6 +1,6 @@
 # :superhero_man: React Marvel
 Discover the Marvel Universe with the React Marvel app.\
-Here you can find information about your favorite character and find comics with him.
+Here you can find information about your favorite Marvel character and find comics with him.
 
 ## Stack
 - React.JS
@@ -13,13 +13,13 @@ Here you can find information about your favorite character and find comics with
 ## Setup
 1. Clone this repo and go to the cloned folder.
 ``` sh
-$> https://github.com/cvine21/react-hacker-news.git && cd react-hacker-news
+$> https://github.com/cvine21/react-marvel.git && cd react-marvel
 ```
 2. Install all the dependencies
 ``` sh
-$> yarn install
+$> npm install
 ```
 3. Run the application
 ``` sh
-$> yarn start
+$> npm start
 ```
