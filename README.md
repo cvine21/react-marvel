@@ -58,7 +58,7 @@ In comics page select the comic you're interested in.
 1. Clone this repo and go to the cloned folder.
 
 ```sh
-$> https://github.com/cvine21/react-marvel.git && cd react-marvel
+$> git clone https://github.com/cvine21/react-marvel.git && cd react-marvel
 ```
 
 2. Install all the dependencies
