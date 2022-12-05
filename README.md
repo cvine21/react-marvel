@@ -45,12 +45,13 @@ In comics page select the comic you're interested in.
 
 ## Stack
 
--   React.JS
--   React Router
--   Formik
--   Yup
--   SCSS
--   <a href="https://developer.marvel.com/">Marvel Comics API</a>
+- React.JS
+- React Router
+- React Helmet
+- Formik
+- Yup
+- SCSS
+- <a href="https://developer.marvel.com/">Marvel Comics API</a>
 
 ## How to run
 
