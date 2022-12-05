@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import PropTypes from "prop-types";
 
 import "./charList.scss";
@@ -72,10 +72,14 @@ const CharList = (props) => {
 		return <ul className="char__grid">{items}</ul>;
 	};
 
-	const content = setListContent(
-		process,
-		() => renderItems(charList),
-		newItemLoading
+	const content = useMemo(
+		() =>
+			setListContent(
+				process,
+				() => renderItems(charList),
+				newItemLoading
+			),
+		[process]
 	);
 
 	return (
